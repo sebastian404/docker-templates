@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/sebastian404/docker-templates/master/sebastian404/internetarchive.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Downloaders:</Category>
+  <Date>2020-03-31</Date>
+  <Name>internetarchive</Name>
+  <Support></Support>
+  <Description>The ia command-line tool is installed with internetarchive, ia allows you to interact with various archive.org services from the command-line.
+  </Description>
+  <Project>https://archive.org/services/docs/api/internetarchive/</Project>
+  <Overview>This package installs a command-line tool named ia for using Archive.org from the command-line. It also installs the internetarchive Python module for programatic access to archive.org.</Overview>
+  <Registry>https://hub.docker.com/r/sebastian404/internetarchive/</Registry>
+  <Repository>sebastian404/internetarchive</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+   </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Icon>https://raw.githubusercontent.com/sebastian404/docker-templates/master/sebastian404/img/internetarchive-icon.jpg</Icon>
+  <DonateText></DonateText>
+  <DonateLink></DonateLink>
+  <DonateImg></DonateImg>
+  <BaseImage>alpine:latest</BaseImage>
+</Container>
