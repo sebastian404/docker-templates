@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/sebastian404/docker-templates/master/sebastian404/newsreap.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Downloaders:</Category>
+  <Date>2020-06-31</Date>
+  <Name>newsreap</Name>
+  <Support></Support>
+  <Description>NewsReap is a library written to wrap around the NNTP protocol. It simplifies a lot of development. But it also comes with a standalone script that can allow you interface with your Usenet providers.
+  </Description>
+  <Project>https://github.com/caronc/newsreap</Project>
+  <Overview>NewsReap is a library written to wrap around the NNTP protocol. It simplifies a lot of development. But it also comes with a standalone script that can allow you interface with your Usenet providers.</Overview>
+  <Registry>https://hub.docker.com/r/sebastian404/newsreap/</Registry>
+  <Repository>sebastian404/newsreap</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+   </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Icon>https://raw.githubusercontent.com/sebastian404/docker-templates/master/sebastian404/img/newsreap-icon.png</Icon>
+  <DonateText></DonateText>
+  <DonateLink></DonateLink>
+  <DonateImg></DonateImg>
+  <BaseImage>alpine:3.11</BaseImage>
+</Container>
