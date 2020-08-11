@@ -26,7 +26,19 @@
   </Environment>
   <Networking>
     <Mode>bridge</Mode>
-   </Networking>
+    <Publish>
+      <Port>
+        <HostPort>6800</HostPort>
+        <ContainerPort>6800</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9000</HostPort>
+        <ContainerPort>9000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
   <Data>
     <Volume>
       <HostDir></HostDir>
